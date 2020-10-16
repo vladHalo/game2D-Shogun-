@@ -6,10 +6,8 @@ using UnityEngine.SceneManagement;
 public class NewBehaviourScript : MonoBehaviour
 {
     // Start is called before the first frame update
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void Next()
     {
-        if (collision.tag == "Finish") {
-            SceneManager.LoadScene("Game2");
-        }
+        SceneManager.LoadScene("Game2");  
     }
 }
